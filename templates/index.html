@@ -1,0 +1,51 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org" ng-app="app">
+<head>
+<title>Расчет норматива</title>
+<script src="/static/jquery/jquery-3.1.0.min.js"></script>
+<script src="/static/jqmath/jqmath-etc-0.4.5.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/static/jqmath/jqmath-0.4.3.css">
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+
+</head>
+<body ng-controller="ctrl">
+
+<div class="title">
+  <div><h4>Итоговые значения нормативов затрат на оказание государственных услуг<br/>
+  по реализации основных общегосударственных программ основного общего образования</h4></div>
+</div>
+
+<div>
+    {% include "quizes/quiz1.html" %}
+    
+    {% include "quizes/quizGroup1.html" %}
+    {% for item in range(5) %}
+        {% include "quizes/quizGroup1%s.html" % (item + 1) %}
+    {% endfor %}
+
+    {% include "quizes/quizGroup2.html" %}
+    {% for item in range(8) %}
+        {% include "quizes/quizGroup2%s.html" % (item + 1) %}
+    {% endfor %}
+</div>
+
+<div class="bottomline">
+  <table>
+    <tr>
+      <td colspan="3" class="bottomline-attr">Итого:</td>
+      <td class="bottomline-value"><input id="norm" 
+        class="control control--disabled" ui-number-mask ng-model="result" disabled></td>
+    </tr>
+  </table>
+</div>
+
+<script src="/static/angularjs/angular_ru-ru.js"></script>
+<script src="/static/angularjs/angular-input-masks-standalone.min.js"></script>
+<script>
+  {% include "application.js" %}
+  {% include "directives.js" %}
+</script>
+
+<body>
+</html>

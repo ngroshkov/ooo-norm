@@ -1,0 +1,21 @@
+<div class="quiz">
+  <table class="quiz--table">
+    <tr>
+      <td class="question">Регион РФ</td>
+      <td class="data ">
+        <div ng-class="!selectedregion ? 'notcompleted' : 'completed'" 
+             class="control-group data--item">
+          <div class="select">
+            <select id="region" class="control--select" 
+                ng-model="selectedregion" 
+                ng-options="option.name for option in regions"
+                ng-change="selectedRegionChanged()">
+                <!-- option ng-repeat="option in regions" value="{{option}}">{{option.name}}</option-->
+            </select>
+            <div class="select__arrow"></div>
+          </div>
+        </div>
+      </td> 
+    </tr>
+  </table>
+</div>

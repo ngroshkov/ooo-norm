@@ -1,0 +1,38 @@
+<div class="quiz quiz--group2">
+  <table class="quiz--table">
+    <tr>
+    <td class="question"><b>Б2.1. </b>Затраты на коммунальные услуги</td>
+    <td class="data">
+      <table>
+        <tr tr-data-value name="расчетный средний суточный расход горячей воды на учащегося 
+            по СНиП 2.04.01-85, таблица А.3, пункт 7, куб.м" value="0,00231"></tr>
+        <tr tr-data-module name="тариф на горячее водоснабжение из ЕМИСС, по региону" value="hotwater"></tr>
+        <tr tr-data-value name="расчетный средний суточный расход холодной воды на учащегося 
+            по СНиП 2.04.01-85, таблица А.3, пункт 7, куб.м" value="0,00347"></tr>
+        <tr tr-data-module name="тариф на холодное водоснабжение из ЕМИСС, по региону" value="water"></tr>
+        <tr tr-data-module name="тариф на водоотведение из ЕМИСС, по региону" value="sewage"></tr>
+        <tr tr-data-value name="расчетное потребление электроэнергии на учащегося (кВт) (данные сайта 
+            <a href='http://www.cnis.ru'>http://www.cnis.ru</a> по Респ. Ингушетия)" value="198,39"></tr>
+        <tr tr-data-module name="тариф на электроэнергию из ЕМИСС, по региону" value="electricity"></tr>
+        <tr tr-data-value name="расчетное потребление теплоэнергии на учащегося (Гкал) (данные сайта 
+            <a href='http://www.cnis.ru'>http://www.cnis.ru</a> по Респ. Ингушетия)" value="1,40"></tr>
+        <tr tr-data-module name="тариф на теплоэнергию из ЕМИСС, по региону" value="heat"></tr>
+        <tr tr-data-value name="рабочих дней" value="247"></tr>
+      </table>
+    </td> 
+    <td class="comment">
+        <table>
+            <tr><td colspan="2" style="text-align:center;padding-top: 10px;">
+                $$ \[\table ({0,00231} × {\bi\text"( {{hotwater | number}} )"}) × 247 + 
+                        ({0,00347} × {\bi\text"( {{water | number}} )"}) × 247 + ;
+                    ({0,00231} + {0,00347}) × {\bi\text"( {{sewage | number}} )"} × 247 +; 
+                    ({198,39} × {\bi\text"( {{electricity | number}} )"}) + 
+                        ({1,40} × {\bi\text"( {{heat | number}} )"}) \] =$$ </td></tr>
+        </table>
+    </td>
+    <td style="padding-top:30px" class="result">
+      <input id="quiz--result" class="control control--disabled" ui-number-mask ng-model="quiz21result" disabled>
+    </td>
+    </tr>
+  </table>
+</div>

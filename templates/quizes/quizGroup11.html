@@ -1,0 +1,56 @@
+<div id="quiz3" class="quiz quiz--group1">
+  <table class="quiz--table">
+    <tr>
+   <td class="question"><b>Б1.1. </b>Затраты на оплату труда и
+    начисления на выплаты по оплате труда педагогических работников, в
+    том числе страховые взносы в Пенсионный фонд Российской Федерации,
+    Фонд социального страхования Российской Федерации и Фонд
+    обязательного медицинского страхования Российской Федерации, а также
+    на обязательное социальное страхование от несчастных случаев на
+    производстве и профессиональных заболеваний</td>
+   <td class="data">
+    <table>
+     <tr tr-data-module name="средняя заработная плата по региону" value="meanwage"></tr>
+     <tr tr-data-value name="месяцев" value="12"></tr>
+     <tr tr-data-value name="страховые взносы" value="0,302"></tr>
+     <tr tr-data-value name="число учащихся в расчете на 1 педагогического работника
+       на 2016 г. по «Дорожной карте»" value="12,3"></tr>
+     <tr tr-data-value name="часов по Базисному учебному плану начальной школы" value="2 904"></tr>
+     <tr tr-data-value name="часов по Базисному учебному плану основной школы" value="5 495"></tr>
+     <tr tr-data-value name="часов по Базисному учебному плану средней школы" value="2 380"></tr>
+     <tr tr-data-value name="классов (лет обучения)" value="11"></tr>
+     <tr tr-data-value name="учебных недель" value="37"></tr>
+     <tr tr-data-value name="часов в неделю (норма часов на ставку учителя)" value="18"></tr>
+     <tr tr-data-value name="классов (лет обучения) в основной школе" value="5"></tr>
+    </table>
+   </td>
+   <td class="comment">
+    <table>
+     <tr>
+      <td colspan="2" style="text-align: center">$$\bi\text"( {{meanwage | number}} )"
+        × \text"1,65"/\text"1,47" × 12 × \text"1 + 0,302"/\text"12,3" =$$</td>
+     </tr>
+     <tr>
+      <td colspan="2" style="text-align: center">$$1,47 = 
+            \text"2 904 + 5 495 + 2 380"/\text"11 × 37 × 18"$$</td>
+     </tr>
+     <tr>
+      <td colspan="2" style="text-align: center">$$1,65 = 
+            \text"5 495"/\text"5 × 37 × 18"$$</td>
+     </tr>
+     <tr>
+      <td style="vertical-align: middle; text-align: center;">
+       $$\text"1,65"/\text"1,47" \text"&nbsp;&nbsp;–"$$</td>
+      <td style="text-align: left; padding-left: 0px">коэффициент,
+       учитывающий долю часов учебного плана основной школы в учебном
+       плане школы и численность педагогов, участвующих в реализации
+       учебного плана основной школы</td>
+     </tr>
+    </table>
+   </td>
+    <td class="result">
+      <input id="quiz--result" class="control control--disabled" ui-number-mask ng-model="quiz11result" disabled>
+    </td>
+    </tr>
+  </table>
+</div>

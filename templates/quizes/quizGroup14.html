@@ -1,0 +1,33 @@
+<div id="quiz6" class="quiz quiz--group1">
+  <table class="quiz--table">
+    <tr>
+    <td class="question"><b>Б1.4. </b>Затраты на повышение квалификации педагогических работников
+        без учета затрат на суточные и расходы на проживание педагогических работников на время 
+        повышения квалификации при прохождении повышения квалификации в дистанционной форме, 
+        за исключением затрат на приобретение транспортных услуг</td>
+    <td class="data">
+      <table>
+        <tr tr-data-value name="средняя заработная плата за 2014 г. по данным Росстата в РФ" value="32 611"></tr>
+        <tr tr-data-value name="дней обучения" value="18"></tr>
+        <tr tr-data-value name="рабочих дней в месяц" value="21"></tr>
+        <tr tr-data-value name="периодичность повышения квалификации для педагогов" value="3"></tr>
+        <tr tr-data-module name="средняя заработная плата по региону" value="meanwage"></tr>
+        <tr tr-data-value name="число учащихся в расчете на 1 педагогического работника на 2016 г. 
+            по «Дорожной карте»" value="12,3"></tr>
+      </table>
+    </td> 
+    <td class="comment">
+        <table>
+            <tr><td colspan="2" style="text-align:center"> $${\text"32 611"/21 × 18 × {(0,75 × 0,1 + 1 - 0,75)}/{12,3 × 3} + 
+                \bi\text"( {{meanwage | number}} )"/21 × 18 × 1/\text"12,3 × 3"=$$ </td></tr>
+            <tr><td style="vertical-align: middle;text-align:center;"> $${(0,75 × 0,1 + 1 - 0,75)} \text"&nbsp;&nbsp;–"$$ </td>
+                <td style="text-align:left; padding-left:0px"> коэффициент на повышение квалификации, реализуемой в 
+                    дистанционной/электронной форме, экспертная оценка </td></tr>
+        </table>
+    </td>
+    <td class="result">
+      <input id="quiz--result" class="control control--disabled" ui-number-mask ng-model="quiz14result" disabled>
+    </td>
+    </tr>
+  </table>
+</div>

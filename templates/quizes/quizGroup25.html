@@ -1,0 +1,30 @@
+<div class="quiz quiz--group2">
+  <table class="quiz--table">
+    <tr>
+    <td class="question"><b>Б2.5. </b>Затраты на приобретение транспортных услуг, 
+        включая в том числе расходы на организацию подвоза обучающихся к месту учебы 
+        и проезд педагогических работников до места прохождения повышения квалификации и обратно</td>
+    <td class="data">
+      <table>
+         <tr tr-data-value name="число учащихся в расчете на 1 педагогического работника 
+            на 2016 г. по «Дорожной карте»" value="12,3"></tr>
+         <tr tr-data-value name="периодичность прохождения повышения квалификации, лет" value="3"></tr>
+         <tr tr-data-value name="проезд на автобусе на 50 км тарифы (ЕМИСС, по РФ)" value="95,85"></tr>
+         <tr tr-data-value name="туда и обратно" value="2"></tr>
+         <tr tr-data-value name="дней обучения" value="18"></tr>
+      </table>
+    </td> 
+    <td class="comment">
+        <table>
+            <tr><td colspan="2" style="text-align:center"> $$ 1/\text"12,3 × 3" × 95,85 × 2 × 18 × (0,75×0,1+1-0,75) =$$ </td></tr>
+            <tr><td style="vertical-align: middle;text-align:center;"> $$(0,75 × 0,1 + 1 - 0,75) \text"&nbsp;&nbsp;–"$$ </td>
+                <td style="text-align:left; padding-left:0px"> коэффициент на повышение квалификации, реализуемой в 
+                    дистанционной/электронной форме, экспертная оценка </td></tr>
+        </table>
+    </td>
+    <td class="result">
+      <input id="quiz--result" class="control control--disabled" ui-number-mask ng-model="quiz25result" disabled>
+    </td>
+    </tr>
+  </table>
+</div>

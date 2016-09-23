@@ -1,0 +1,58 @@
+<div class="quiz quiz--group2">
+  <table class="quiz--table">
+    <tr>
+    <td class="question"><b>Б2.3. </b>Затраты на содержание объектов особо ценного движимого имущества</td>
+    <td class="data">
+      <table>
+        <tr tr-data-value name="число учащихся 1-11 классов" value="625"></tr>
+        <tr tr-data-value name="число учащихся в классе" value="25"></tr>
+        <tr tr-data-value name="стоимость единицы работы по техническому обслуживанию и регламентно-профилактическому 
+            ремонту систем кондиционирования и вентиляции, рублей, (ЕМИСС, по Респ. Дагестан)" value="829,63"></tr>
+        <tr tr-data-value name="периодичность проведения работ (раз в 10 лет), 
+            по СанПиН 2.4.2.2821-10 (только для систем вентиляции)" value="10"></tr>
+        <tr tr-data-value name="расчетный коэффициент снижения стоимости  работ по техническому обслуживанию и 
+            регламентно-профилактическому ремонту систем пожарной и охранно-тревожной 
+            сигнализации, экспертная оценка" value="0,5"></tr>
+        <tr tr-data-value name="стоимость единицы работы по техническому обслуживанию и 
+            регламентно-профилактическому ремонту систем видеонаблюдения 
+            (ЕМИСС, по Респ. Дагестан)" value="633,01"></tr>
+        <tr tr-data-value name="средняя стоимость услуг по обслуживанию и регламентно-профилактическому ремонту 
+            систем канализации, наружного водопровода (
+            ООО «Евростройгрупп», <a href='http://evrostroygrupp.ru'>http://evrostroygrupp.ru</a>; 
+            ООО «Комсервис», <a href='http://www.komservice.ru'>http://www.komservice.ru</a>; 
+            ООО «Кансервис», <a href='http://www.kanservice.ru'>http://www.kanservice.ru</a>)" value="5 807"></tr>
+        <tr tr-data-value name="средняя стоимость услуг по обслуживанию приборов учета, рублей за прибор (
+            ФГУ «Ростест-Москва», <a href='http://www.rostest.ru'>http://www.rostest.ru</a>; 
+            ООО «Водопроект», <a href='http://vodo-proekt.ru'>http://vodo-proekt.ru</a>; 
+            ООО «ЖКХ-сервис», <a href='http://www.jkh-servis.ru'>http://www.jkh-servis.ru</a>)" value="548"></tr>
+        <tr tr-data-value name="прибора учёта" value="4"></tr>
+        <tr tr-data-value name="средняя стоимость услуг по обслуживанию медицинского оборудования (
+            ООО «Медтехсервис», <a href='http://medtehservis.ru'>http://medtehservis.ru</a>; 
+            ООО «Техноаналитприбор», <a href='http://ersplus.ru'>http://ersplus.ru</a>; 
+            ООО «Диксион», <a href='http://dixion.ru'>http://dixion.ru</a>)" value="5 245"></tr>
+        <tr tr-data-value name="средняя стоимость услуг по обслуживанию оборудования столовой (
+            ООО «Р-флекс», <a href='http://r-flex.ru'>http://r-flex.ru</a>; 
+            ООО «Росинокс» <a href='http://www.rosinox.ru'>http://www.rosinox.ru</a>; 
+            ООО «Проф-рест», <a href='http://prof-rest.ru'>http://prof-rest.ru</a>)" value="5 362"></tr>
+        <tr tr-data-value name="единицы оргтехники" value="4"></tr>
+        <tr tr-data-value name="средняя стоимость услуг по обслуживанию оргтехини и компьютеров, рублей за единицу 
+            (ООО «Ирвин» <a href='http://www.irwin.ru'>http://www.irwin.ru</a>; 
+            ООО «Леком», <a href='http://lekom.ru'>http://lekom.ru</a>; 
+            ООО «Синксервис», <a href='http://sync-service.ru'>http://sync-service.ru</a>)" value="1 382"></tr>
+      </table>
+    </td> 
+    <td class="comment">
+        <table>
+            <tr><td colspan="2" style="text-align:center;"> 
+                $$ \[\table {625/25} × {829,63}/{625 × 10} +; 
+                            (625/25 × 0,5 × 829,63 + 625/25 × 633,01) × 1/625 +;
+                            \text"5 807"/\text"625 × 10" + \text"548 × 4"/\text"625 × 3" + \text"5 245"/\text"625 × 7" +
+                            \text"5 362"/\text"625 × 7" + \text"4 × 1 382"/625 \] =$$ </td></tr>
+        </table>
+    </td>
+    <td style="padding-top:60px" class="result">
+      <input id="quiz--result" class="control control--disabled" ui-number-mask ng-model="quiz23result" disabled>
+    </td>
+    </tr>
+  </table>
+</div>
